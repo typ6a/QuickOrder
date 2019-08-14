@@ -1,0 +1,15 @@
+<?php $helper = $this->helper("ALevel\QuickOrder\Helper\Data"); ?>
+<?php $addtocartId = $helper->getConfig('quickorder/general/addtocart_id'); ?>
+<?php $buttonTitle = $helper->getConfig('quickorder/general/button_title'); ?>
+<?php $formId = $addtocartId ? $addtocartId : "product_addtocart_form"; ?>
+<div class="quickorder-button">
+    <button type="submit" title="<?php /* @escapeNotVerified */ echo __($buttonTitle) ?>" id="quick-order" class="action primary" data-mage-init='
+    {
+        "ALevel_QuickOrder/js/quick-order": {
+            "form": "#<?php echo $formId; ?>"
+        }
+    }
+    '>
+        <span><?php /* @escapeNotVerified */ echo __($buttonTitle) ?></span>
+    </button>
+</div>

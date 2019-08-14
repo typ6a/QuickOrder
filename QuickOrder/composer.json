@@ -1,0 +1,25 @@
+{
+    "name": "magealevel/module-quickorder",
+    "description": "Magento2 Quick Order Module",
+    "homepage": "https://github.com/magealevel/magento2-quickorder",
+    "type": "magento2-module",
+    "version": "1.1.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+          "name": "ALevel Patel",
+          "email": "mail.magealevel@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/magealevel/magento2-quickorder/issues"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ALevel\\QuickOrder\\": ""
+        }
+    }
+}

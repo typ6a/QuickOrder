@@ -10,62 +10,62 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             $installer->getTable('alevel_quickorder_quickorderitem')
         )
         ->addColumn(
-                'quickorderitem_id',
-                \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
-                null,
-                [
-                  'identity' => true,
-                  'nullable' => false,
-                  'primary' => true,
-                  'unsigned' => true,
-                ],
-                'Quickorder ID'
+            'quickorderitem_id',
+            \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+            null,
+            [
+              'identity' => true,
+              'nullable' => false,
+              'primary' => true,
+              'unsigned' => true,
+            ],
+            'Quickorder ID'
         )
         ->addColumn(                
-                'name',
-                \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-                255,
-                [
-                  'nullable' => false,
-                ],
-                'Name'
+            'name',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            255,
+            [
+              'nullable' => false,
+            ],
+            'Name'
         )
         ->addColumn(                
-                'email',
-                \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-                255,
-                [
-                  'nullable' => true,
-                ],
-                'Email'
+            'email',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            255,
+            [
+              'nullable' => true,
+            ],
+            'Email'
         )
         ->addColumn(                
-                'phone',
-                \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-                255,
-                [
-                  'nullable' => false,
-                ],
-                'Phone'
+            'phone',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            255,
+            [
+              'nullable' => false,
+            ],
+            'Phone'
         )
         ->addColumn(                
-                'sku',
-                \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-                255,
-                [
-                  'nullable' => false,
-                ],
-                'SKU'
+            'sku',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            255,
+            [
+              'nullable' => false,
+            ],
+            'SKU'
         )
         ->addColumn(                
-                'status',
-                \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-                255,
-                [
-                  'nullable' => true,
-                  'default'  => 'Pending'
-                ],
-                'Status'
+            'status',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            255,
+            [
+              'nullable' => true,
+              'default'  => 'Pending'
+            ],
+            'Status'
         )
         ->addColumn(
             'url_key',

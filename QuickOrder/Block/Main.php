@@ -5,7 +5,7 @@ class Main extends \Magento\Framework\View\Element\Template
     protected $quickOrderFactory;
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Alevel\QuickOrder\Model\QuickOrderItemFactory $quickOrderFactory
+        \ALevel\QuickOrder\Model\QuickOrderItemFactory $quickOrderFactory
     )
     {
         $this->quickOrderFactory = $quickOrderFactory;

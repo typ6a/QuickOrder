@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="ALevel_QuickOrder::css/quickorder.css"/>
+    </head>
+    <body>
+        <referenceBlock name="product.info.addtocart">
+            <block class="Magento\Catalog\Block\Product\View"
+                   name="product.quickorder"
+                   template="ALevel_QuickOrder::quickorder-view.phtml"
+                   before="-" ifconfig="quickorder/general/enable_view"/>
+        </referenceBlock>
+        <referenceBlock name="product.info.addtocart.additional">
+            <block class="Magento\Catalog\Block\Product\View"
+                   name="product.quickorder.config"
+                   template="ALevel_QuickOrder::quickorder-view.phtml"
+                   before="-" ifconfig="quickorder/general/enable_view"/>
+        </referenceBlock>
+    </body>
+</page>

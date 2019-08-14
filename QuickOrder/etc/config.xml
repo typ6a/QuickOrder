@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <quickorder>
+            <general>
+                <keep_cart_products>0</keep_cart_products>
+                <enable_list>1</enable_list>
+                <enable_view>1</enable_view>
+                <enable_search>1</enable_search>
+                <enable_advanced_search>1</enable_advanced_search>
+                <enable_related>1</enable_related>
+                <addtocart_id>product_addtocart_form</addtocart_id>
+                <button_title>Quick Order</button_title>
+            </general>
+        </quickorder>
+    </default>
+</config>
